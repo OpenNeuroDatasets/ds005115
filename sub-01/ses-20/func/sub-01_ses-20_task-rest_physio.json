@@ -1,0 +1,44 @@
+{
+	"SamplingFrequency": 5000,
+	"StartTime": -60.8674,
+	"Columns": ["Z (NICO100C)", 
+		"MRI Trigger", 
+		"Contractility", 
+		"Z (DC-15Hz)", 
+		"Acc-dZ (0.5-20Hz)", 
+		"Contractility (BPF 25Hz)",
+		"Ventilation Effort", 
+		"Heart Rate"],
+	"Z (NICO100C)": {
+		"Description": "Thoracic impedance",
+		"Units": "ohms/sec"
+	},
+	"MRI Trigger": {
+                "Description": "MRI scanner trigger",
+                "Units": "volts"
+        },
+    	"Contractility": {
+                "Description": "Should be labeled 'Acceleration' - derivative of raw Z NICO100C signal",
+                "Units": "ohms/sec^2"
+        },         
+	"Z (DC-15Hz)": {
+                "Description": "Thoracic impedance with 15hz low pass IIR filter",
+                "Units": "ohms/sec"
+        },
+	"Acc-dZ (0.5-20Hz)": {
+                "Description": "Impedance acceleration with 0.5-20hz band pass low+high IIR filter",
+                "Units": "ohms/sec^2"
+        },
+	"Contractility (BPF 25Hz)": {
+                "Description": "Impedance contractiltiy (jerk) - derivative of Acc-dZ taken with 25hz band pass IIR filter",
+                "Units": "ohms/sec^3"
+        },
+	"Ventilation Effort": {
+                "Description": "Respiration measure calculated from thoracic impedance with 0.05-0.5hz band pass low+high IIR filter",
+                "Units": "Effort"
+        },
+	"Heart Rate": {
+                "Description": "Number of heart beats per minute, calculated from detecting Acc-dZ peaks. Technically considered pulse rate due to the peripheral measurement.",
+                "Units": "bpm"
+        }
+}
