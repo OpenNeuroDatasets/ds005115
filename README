@@ -16,7 +16,7 @@ Stump A, Gregory C, Babenko V, Rizor E, Bullock T, Macy A, Giesbrecht B, Grafton
 doi: 10.1111/psyp.14411. Epub 2023 Sep 4. PMID: 37667430.
 For more information:
 Wiki: https://github.com/caitgregory/SCOT/wiki/Trans-Radial-Electrical-Bioimpedance-Velocimetry-(TREV)
-To obtain heart contractility estimates, we strongly recommend importing the Acc-dZ channel from the .acq file into the following open source software: https://github.com/caitgregory/SCOT
+To obtain heart contractility estimates, we strongly recommend importing the Acc-dZ channel from the .acq file into the following open source software: https://github.com/caitgregory/SCOT - do not use the calculated contractility channels present in the .acq/.tsv file. Correct units of measure for each signal estimate are located in the physio.json files, which may vary from the stated units in the .acq/.tsv files. Start times for ses-10 through ses-23 are estimated from the .acq files, as the MRI trigger was not recorded in these sessions. 
 
 
 References: 
